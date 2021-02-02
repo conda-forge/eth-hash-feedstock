@@ -1,5 +1,5 @@
 {% set name = "eth-hash" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 499dc02d098f69856d1a6dd005529c16174157d4fb2a9fe20c41f69e39f8f176
+  sha256: 13d5124acdc127aff6e0e93b413b996335309d6f410d61daeb6508fd53b2fa02
 
 build:
   number: 0
@@ -20,8 +20,14 @@ requirements:
     - pip
     - python >=3.5,<4.0
     - setuptools-markdown
+    - pycryptodome
   run:
     - python >=3.5,<4.0
+    - pycryptodome >=3.6.6,<4
+    - eth-utils
+  run_constrained:
+    - pycryptodome >=3.6.6,<4
+    - pysha3 >=1.0.0,<2.0.0
 
 test:
   imports:
