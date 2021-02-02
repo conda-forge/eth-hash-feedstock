@@ -20,8 +20,10 @@ requirements:
     - pip
     - python >=3.5,<4.0
     - setuptools-markdown
+    - pycryptodome
   run:
     - python >=3.5,<4.0
+    - pycryptodome
 
 test:
   imports:
@@ -29,8 +31,10 @@ test:
     - eth_hash.backends
   commands:
     - pip check
+    - pytest --numprocesses=4 --looponfail --maxfail=1
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/ethereum/eth-hash
