@@ -1,11 +1,11 @@
-About eth-hash
-==============
+About eth-hash-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eth-hash-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ethereum/eth-hash
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eth-hash-feedstock/blob/main/LICENSE.txt)
 
 Summary: eth-hash: The Ethereum hashing function, keccak256, sometimes (erroneously) called sha3
 
