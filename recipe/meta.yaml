@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5,<4.0
+    - python
     - setuptools-markdown
     - pycryptodome
   run:
-    - python >=3.5,<4.0
+    - python
     - pycryptodome >=3.6.6,<4
     - pysha3 >=1.0.0,<2.0.0  # [py<3.9]
     - safe-pysha3 >=1.0.0  # [py>=3.9]
