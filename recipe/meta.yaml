@@ -23,8 +23,8 @@ requirements:
     - python
     - pycryptodome >=3.6.6,<4
   run_constrained:
-    - safe-pysha3 >=1.0.0  # [py>=3.9]
-    - pysha3 >=1.0.0,<2.0.0  # [py<3.9]
+    - safe-pysha3 >=1.0.0  # [py>=3.10]
+    - pysha3 >=1.0.0,<2.0.0  # [py<3.10]
 
 test:
   imports:
